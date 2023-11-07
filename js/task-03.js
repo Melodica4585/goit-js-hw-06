@@ -18,3 +18,8 @@ const markup = images
   .map((img) => `<li> <img src = ${img.url} alt = ${img.alt} /> </li>`)
   .join("");
 myList.insertAdjacentHTML("beforeend", markup);
+
+myList.style.listStyleType = "none";
+myList.style.display = "flex";
+myList.style.flexDirection = "column";
+myList.style.gap = "20px";
